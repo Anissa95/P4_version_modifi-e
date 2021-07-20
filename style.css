@@ -30,7 +30,6 @@ a:hover {
 .bloc {
     width: 100%;
     clear: both;
-    background: 50% 50% no-repeat;
     padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -76,10 +75,6 @@ a:hover {
     background: repeat;
 }
 
-.bg-t-edge {
-    background: top no-repeat;
-}
-
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -88,11 +83,6 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -117,23 +107,6 @@ a:hover {
 
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
-}
-
-.d-bloc .a-btn,
-.d-bloc .navbar a,
-.d-bloc .navbar-brand,
-.d-bloc a .icon-sm,
-.d-bloc a .icon-md,
-.d-bloc a .icon-lg,
-.d-bloc a .icon-xl,
-.d-bloc h1 a,
-.d-bloc h2 a,
-.d-bloc h3 a,
-.d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
-    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc .a-btn:hover,
@@ -277,8 +250,8 @@ a:hover {
     margin-left: 0;
 }
 
-.row.row-no-gutters > [class^="col-"],
-.row.row-no-gutters > [class*=" col-"] {
+.row.row-no-gutters>[class^="col-"],
+.row.row-no-gutters>[class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
 }
@@ -322,18 +295,18 @@ a:hover {
     z-index: 1;
 }
 
-.nav > li {
+.nav>li {
     float: left;
     margin-top: 4px;
     font-size: 16px;
 }
 
-.navbar-nav .open .dropdown-menu > li > a {
+.navbar-nav .open .dropdown-menu>li>a {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
+.nav>li a:hover,
+.nav>li a:focus {
     background: transparent;
 }
 
@@ -370,8 +343,8 @@ a:hover {
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
+    .nav>li .dropdown-menu a,
+    .nav>li .dropdown-menu a:hover {
         color: #484848;
     }
     .nav-invert .site-navigation {
@@ -386,7 +359,7 @@ a:hover {
     }
     .nav-center .navbar-header,
     .nav-center .navbar-brand,
-    .nav-center .nav > li {
+    .nav-center .nav>li {
         float: none;
         display: inline-block;
     }
@@ -403,7 +376,7 @@ a:hover {
     }
 }
 
-.nav > li > .dropdown a {
+.nav>li>.dropdown a {
     background: none!important;
     display: block;
     padding: 14px 15px;
@@ -677,7 +650,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1em;
 }
 
 .tight-width-whitespace {
@@ -735,12 +708,12 @@ h4 {
     margin-top: 24px;
 }
 
-.white {
-    color: #FFFFFF!important;
+.black {
+    color: #0a0a0a!important;
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    margin: auto;
 }
 
 .portfolio-row {
@@ -766,30 +739,27 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
-
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #99390d;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #e9520c!important;
     color: #FFFFFF!important;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #0a0a0a!important;
+    font-size: 1.5em;
 }
 
 .ltc-white:hover {
@@ -809,20 +779,12 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("./img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("./img/image-de-presentation.png");
 }
 
 @media (max-width: 1024px) {
@@ -923,7 +885,7 @@ h4 {
         -webkit-transform: none;
         -ms-transform: none;
     }
-    .nav > li {
+    .nav>li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         background: rgba(0, 0, 0, .05);
@@ -931,7 +893,7 @@ h4 {
         padding-left: 15px;
         width: 100%;
     }
-    .nav > li:hover {
+    .nav>li:hover {
         background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
@@ -1039,4 +1001,14 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+#citation-text {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+#citation-auteur {
+    font-style: normal;
+    color: #575757!important;
 }
