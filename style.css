@@ -810,13 +810,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -852,6 +852,9 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .bloc-mob-center-text {
+        text-align: center;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -997,12 +1000,6 @@ h4 {
     }
 }
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
-    }
-}
-
 #citation-text {
     font-size: 1.3em;
     font-style: italic;
@@ -1011,4 +1008,9 @@ h4 {
 #citation-auteur {
     font-style: normal;
     color: #575757!important;
+}
+
+.contact-mail {
+    color: blue!important;
+    font-weight: bold;
 }
